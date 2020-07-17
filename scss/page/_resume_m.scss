@@ -1,0 +1,177 @@
+// _resume_m.scss
+// 반응형
+// 이력서페이지 ~640px
+
+@media all and (max-width: $mobile){
+	// @media 시작태그
+	
+
+	#contentBox {
+		@include sectionSize(){
+			background-color:$black;
+			color:$white;
+			padding-top: 100px;
+			overflow-x: hidden;
+		}
+		.content_area {
+			@include areaSize($w:100%, $mw:$maxWidth){
+				padding-top:20px;
+			};
+		
+	
+			>div {
+				// float:left;
+				width: 100%; height: auto;
+				margin:auto;
+				margin-bottom: 5rem; 
+				// margin-right: 2%;
+				padding: 1rem; box-sizing: border-box;
+				// background-color:#ddd;
+				
+				>h3 {
+					position: relative;
+					font-size: $h3Mobile;
+					margin-bottom: 1.5rem;
+					
+					>span {
+						position: relative; z-index:0;
+						display: inline-block;
+						padding: 0 10px; padding-right:30px;
+						// text-align: center;
+						@include textShadow();
+											
+						&:before {
+							content: "";
+							position: absolute; bottom:0; left: 0; right:0; z-index:-1;
+							width: 0; height: 20px;
+							background-color: $keyColor;
+							border-radius: 10px;
+							transform: skewX(-20deg);
+							transition: all 300ms ease-out;
+						}
+						&.active:before{ width:100%; }
+					}
+				}
+	
+				p {
+					font-size:0.875rem;
+					margin-bottom: 0.8rem;
+					word-break: keep-all;
+					>.bold{ font-weight: bold;}
+				}
+			}
+	
+			// 각자 개별적인 개인정보의 속성
+			.basic_info {
+				// position:relative;
+				width: 100%; max-width: 300px;height: auto; 
+				margin:auto;
+				padding: 10px 30px; box-sizing: border-box;
+				>div { 
+					float:left; 
+				}
+				.myPhoto {
+					// position: absolute; top: 0; left: 0px;
+					width: 200px; height: 200px;
+					border-radius: 100%; margin:auto;
+					margin-left: 20px;
+					// border-top-right-radius: 100%;
+					// border-bottom-right-radius: 100%;
+					@include bgImage($i:'../../img/resume.jpg'){}
+				}
+				.myInfo {
+					width: 100%; height: 150px;
+					margin-top: 30px; 
+	
+					strong {font-size: 1.5rem}
+	
+					>ul {width: 100%; height:auto;}
+					>ul li {
+						// float:left; 
+						width: 40px; height: 40px;
+						margin-right: 10px;
+	
+						a {
+							@include aLink()
+						}
+	
+						a>i {
+							display: block;
+							width: 100%; height: 100%; 
+							font-size: 2rem;
+							text-align:center;
+						}
+					}
+				}
+	
+			}
+			.edu {}
+			
+			.experience {
+				margin-right:0;
+			}
+	
+			.skills {
+				// >ul { width: 100%; height: auto;}
+				// >ul li { 
+				// 	float: left;
+				// 	width: 150px; height: 150px;
+				// 	margin-right: 1%; margin-bottom: 1%;
+				// 	border-radius: 100%;
+				// 	background-color: $keyColor;
+				// }
+	
+				.skill_graph {
+					width:400px; height: auto;
+				}
+			}
+	
+			.cerfi {	}
+			.interest {
+				>ul { width: 100%; height: auto; }
+				>ul li {
+					float:left;
+					width: 70px; height: 70px;
+					background-color:$keyColor;
+					border-radius: 100%;
+					margin-right: 0px;
+					margin-bottom: 10rem;
+					text-align: center;
+					line-height: 70px;
+	
+					&:nth-child(2n) { 
+						transform: translateY(50px);;
+					}
+				}
+			 }
+			.personality {
+				margin-bottom: 10rem;
+
+				>ul { width: 100%; height: auto; }
+				>ul li {
+					float:left;
+					width: 60px; height: 60px;
+					border-radius: 100%;
+					border: 4px solid $keyColor;
+					box-sizing: border-box;
+					margin-right: 10px;
+					text-align: center;
+					line-height: 50px;
+					font-size: 0.875rem;
+				}
+	
+			}
+			.motto { }
+			.vision {margin-right:0; }
+	
+		} //--//.content_area
+	} //--//#contentBox
+	
+	
+
+
+
+
+	
+	// @media 종료태그
+}

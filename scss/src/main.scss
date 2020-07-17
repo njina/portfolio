@@ -1,0 +1,34 @@
+// main.scss
+/* main.css */
+// 개인 포트폴리오 사이트
+// 메인페이지
+
+// 불러오기
+@import '../common/setting';
+// -----
+@import '../common/wrap';
+// -----
+@import '../common/header_m';
+@import '../common/header_t';
+@import '../common/header_l';
+// -----
+@import '../page/main_m';
+@import '../page/main_t';
+@import '../page/main_l';
+// -----
+@import '../common/footer_m';
+@import '../common/footer_t';
+@import '../common/footer_l';
+
+// -----
+
+
+
+
+// footer 일부 수정
+@media all and (min-width:$mobile){
+
+	#footBox {
+		position: absolute; bottom:0; left:0; right:0;
+	}
+}

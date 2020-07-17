@@ -1,0 +1,25 @@
+// _footer_l.scss
+// 공통 footer
+// 반응형 laptop 941px~;
+
+@media all and (min-width:$tablet){
+	// @media 시작태그
+
+
+	
+	#footBox {
+  @include sectionSize ($h:60px){
+		padding: 15px 20px; 
+    box-sizing: border-box;
+    background-color: $bgColorFooter;
+  	}
+  >p{
+		text-align: center;
+    color:$gray;
+    font-size: 0.875rem;
+    line-height: 30px;
+	  }
+	}
+
+// @media 종료태그
+}

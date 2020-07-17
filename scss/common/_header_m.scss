@@ -1,0 +1,62 @@
+// _header_m.scss
+// 반응형
+// 공통 header ~640px
+
+@media all and (max-width: $mobile){
+	// @media 시작태그
+
+
+// headBox --------------------
+#headBox {
+  position: absolute; top:0; left:0; right:0; z-index: 1000;
+  @include sectionSize ($h:auto){
+    padding: 10px; box-sizing: border-box;
+    background-color: $black;
+    color:$white;
+  }
+  .head_area{
+    @include areaSize ($mw:$maxWidth){}
+  }
+  
+  h1 {
+    // float:left;
+    width: 80px; height: 30px;
+    // background-color: $keyColor;
+    font-size: 1.5rem;
+    text-align:center;
+    
+    >a {
+      @include aLink();
+    }
+  }
+
+  #gnbBox {
+    // float:left;
+    width: 100%; height: 40px;
+    margin-top: 10px;
+    
+    >ul { width: 100%; height: 100%;}
+    >ul li {
+      float:left; 
+      width: 50%; height: 100%;
+    
+      >a { 
+        @include aLink();
+        text-align: center;
+				line-height: 40px;
+				font-size: 0.875rem;
+      }	
+    }	
+  }	
+} 
+
+
+
+
+
+
+
+
+	// @media 종료태그
+}
+	

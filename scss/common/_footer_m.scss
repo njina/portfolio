@@ -1,0 +1,27 @@
+// _footer_m.scss
+// 공통 footer
+// 반응형 mobile ~640px;
+
+@media all and (max-width: $mobile){
+	// @media 시작태그
+
+	#footBox {
+		@include sectionSize ($h:auto){
+			padding: 15px 10px; 
+			box-sizing: border-box;
+			background-color: $bgColorFooter;
+			}
+		>p{
+			text-align: center;
+			color:$gray;
+			font-size: 0.785rem;
+			line-height: 1rem;
+			}
+		}
+
+
+
+
+	// @media 종료태그
+}
+

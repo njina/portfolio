@@ -1,0 +1,628 @@
+/* resume.css */
+#wrap {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: #0d0d0d;
+  font-size: 1.1rem; }
+
+@media all and (max-width: 640px) {
+  #headBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    color: #fff; }
+    #headBox .head_area {
+      width: 100%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto; }
+    #headBox h1 {
+      width: 80px;
+      height: 30px;
+      font-size: 1.5rem;
+      text-align: center; }
+      #headBox h1 > a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    #headBox #gnbBox {
+      width: 100%;
+      height: 40px;
+      margin-top: 10px; }
+      #headBox #gnbBox > ul {
+        width: 100%;
+        height: 100%; }
+      #headBox #gnbBox > ul li {
+        float: left;
+        width: 50%;
+        height: 100%; }
+        #headBox #gnbBox > ul li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          font-size: 0.875rem; } }
+
+@media all and (min-width: 640px) and (max-width: 940px) {
+  #headBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    color: #fff; }
+    #headBox .head_area {
+      width: 100%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto; }
+    #headBox h1 {
+      float: left;
+      width: 80px;
+      height: 60px;
+      font-size: 1.5rem;
+      text-align: center; }
+      #headBox h1 > a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    #headBox #gnbBox {
+      float: right;
+      width: 400px;
+      height: 40px;
+      margin-top: 30px; }
+      #headBox #gnbBox > ul {
+        width: 100%;
+        height: 100%; }
+      #headBox #gnbBox > ul li {
+        float: left;
+        width: 50%;
+        height: 100%; }
+        #headBox #gnbBox > ul li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px; } }
+
+@media all and (min-width: 940px) {
+  #headBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    color: #fff; }
+    #headBox .head_area {
+      width: 100%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto; }
+    #headBox h1 {
+      float: left;
+      width: 80px;
+      height: 60px;
+      font-size: 1.5rem;
+      text-align: center; }
+      #headBox h1 > a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    #headBox #gnbBox {
+      float: right;
+      width: 400px;
+      height: 40px;
+      margin-top: 30px; }
+      #headBox #gnbBox > ul {
+        width: 100%;
+        height: 100%; }
+      #headBox #gnbBox > ul li {
+        float: left;
+        width: 50%;
+        height: 100%; }
+        #headBox #gnbBox > ul li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px; } }
+
+@media all and (max-width: 640px) {
+  #contentBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding-top: 100px;
+    overflow-x: hidden; }
+    #contentBox .content_area {
+      width: 100%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto;
+      padding-top: 20px; }
+      #contentBox .content_area > div {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 5rem;
+        padding: 1rem;
+        box-sizing: border-box; }
+        #contentBox .content_area > div > h3 {
+          position: relative;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem; }
+          #contentBox .content_area > div > h3 > span {
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            padding: 0 10px;
+            padding-right: 30px;
+            text-shadow: 0 0.2rem 0.2rem rgba(31, 31, 31, 0.5); }
+            #contentBox .content_area > div > h3 > span:before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: -1;
+              width: 0;
+              height: 20px;
+              background-color: #fa3;
+              border-radius: 10px;
+              transform: skewX(-20deg);
+              transition: all 300ms ease-out; }
+            #contentBox .content_area > div > h3 > span.active:before {
+              width: 100%; }
+        #contentBox .content_area > div p {
+          font-size: 0.875rem;
+          margin-bottom: 0.8rem;
+          word-break: keep-all; }
+          #contentBox .content_area > div p > .bold {
+            font-weight: bold; }
+      #contentBox .content_area .basic_info {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: auto;
+        padding: 10px 30px;
+        box-sizing: border-box; }
+        #contentBox .content_area .basic_info > div {
+          float: left; }
+        #contentBox .content_area .basic_info .myPhoto {
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+          margin: auto;
+          margin-left: 20px;
+          background-image: url("../../img/resume.jpg");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: 100% auto; }
+        #contentBox .content_area .basic_info .myInfo {
+          width: 100%;
+          height: 150px;
+          margin-top: 30px; }
+          #contentBox .content_area .basic_info .myInfo strong {
+            font-size: 1.5rem; }
+          #contentBox .content_area .basic_info .myInfo > ul {
+            width: 100%;
+            height: auto; }
+          #contentBox .content_area .basic_info .myInfo > ul li {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px; }
+            #contentBox .content_area .basic_info .myInfo > ul li a {
+              display: block;
+              width: 100%;
+              height: 100%; }
+            #contentBox .content_area .basic_info .myInfo > ul li a > i {
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 2rem;
+              text-align: center; }
+      #contentBox .content_area .experience {
+        margin-right: 0; }
+      #contentBox .content_area .skills .skill_graph {
+        width: 400px;
+        height: auto; }
+      #contentBox .content_area .interest > ul {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .interest > ul li {
+        float: left;
+        width: 70px;
+        height: 70px;
+        background-color: #fa3;
+        border-radius: 100%;
+        margin-right: 0px;
+        margin-bottom: 10rem;
+        text-align: center;
+        line-height: 70px; }
+        #contentBox .content_area .interest > ul li:nth-child(2n) {
+          transform: translateY(50px); }
+      #contentBox .content_area .personality {
+        margin-bottom: 10rem; }
+        #contentBox .content_area .personality > ul {
+          width: 100%;
+          height: auto; }
+        #contentBox .content_area .personality > ul li {
+          float: left;
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          border: 4px solid #fa3;
+          box-sizing: border-box;
+          margin-right: 10px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 0.875rem; }
+      #contentBox .content_area .vision {
+        margin-right: 0; } }
+
+@media all and (min-width: 640px) and (max-width: 940px) {
+  #contentBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding-top: 100px; }
+    #contentBox .content_area {
+      width: 90%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto;
+      padding-top: 20px; }
+      #contentBox .content_area > div {
+        float: left;
+        width: 49%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 8rem;
+        margin-right: 2%;
+        padding: 1rem;
+        box-sizing: border-box; }
+        #contentBox .content_area > div > h3 {
+          position: relative;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem; }
+          #contentBox .content_area > div > h3 > span {
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            padding: 0 10px;
+            padding-right: 30px;
+            text-shadow: 0 0.2rem 0.2rem rgba(31, 31, 31, 0.5); }
+            #contentBox .content_area > div > h3 > span:before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: -1;
+              width: 0;
+              height: 20px;
+              background-color: #fa3;
+              border-radius: 10px;
+              transform: skewX(-20deg);
+              transition: all 300ms ease-out; }
+            #contentBox .content_area > div > h3 > span.active:before {
+              width: 100%; }
+        #contentBox .content_area > div p {
+          margin-bottom: 0.8rem;
+          word-break: keep-all; }
+          #contentBox .content_area > div p > .bold {
+            font-weight: bold; }
+      #contentBox .content_area .basic_info {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        padding: 10px 50px;
+        box-sizing: border-box;
+        border-radius: 150px; }
+        #contentBox .content_area .basic_info > div {
+          float: left; }
+        #contentBox .content_area .basic_info .myPhoto {
+          position: absolute;
+          top: 0;
+          left: 0px;
+          width: 200px;
+          height: 200px;
+          margin-right: 3rem;
+          border-radius: 100%;
+          background-image: url("../../img/resume.jpg");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: 100% auto; }
+        #contentBox .content_area .basic_info .myInfo {
+          width: 500px;
+          height: 150px;
+          margin-left: 180px; }
+          #contentBox .content_area .basic_info .myInfo strong {
+            font-size: 2.5rem; }
+          #contentBox .content_area .basic_info .myInfo > ul {
+            width: 100%;
+            height: auto; }
+          #contentBox .content_area .basic_info .myInfo > ul li {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px; }
+            #contentBox .content_area .basic_info .myInfo > ul li a {
+              display: block;
+              width: 100%;
+              height: 100%; }
+            #contentBox .content_area .basic_info .myInfo > ul li a > i {
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 2rem;
+              text-align: center; }
+      #contentBox .content_area .experience {
+        margin-right: 0; }
+      #contentBox .content_area .skills > ul {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .skills > ul li {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        border-radius: 100%;
+        background-color: #fa3; }
+      #contentBox .content_area .skills .skill_graph {
+        width: 450px;
+        height: auto; }
+      #contentBox .content_area .cerfi {
+        margin-right: 0; }
+      #contentBox .content_area .interest > ul {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .interest > ul li {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #fa3;
+        border-radius: 100%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 100px; }
+        #contentBox .content_area .interest > ul li:nth-child(2n) {
+          transform: translateY(50px); }
+      #contentBox .content_area .personality {
+        margin-right: 0; }
+        #contentBox .content_area .personality > ul {
+          width: 100%;
+          height: auto; }
+        #contentBox .content_area .personality > ul li {
+          float: left;
+          width: 130px;
+          height: 130px;
+          border-radius: 100%;
+          border: 4px solid #fa3;
+          box-sizing: border-box;
+          margin-right: 20px;
+          text-align: center;
+          line-height: 130px; }
+      #contentBox .content_area .vision {
+        margin-right: 0; } }
+
+@media all and (min-width: 940px) {
+  #contentBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding-top: 100px; }
+    #contentBox .content_area {
+      width: 90%;
+      max-width: 1440px;
+      height: auto;
+      margin: auto;
+      padding-top: 20px; }
+      #contentBox .content_area > div {
+        float: left;
+        width: 49%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 8rem;
+        margin-right: 2%;
+        padding: 1rem;
+        box-sizing: border-box; }
+        #contentBox .content_area > div > h3 {
+          position: relative;
+          font-size: 2rem;
+          margin-bottom: 1.5rem; }
+          #contentBox .content_area > div > h3 > span {
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            padding: 0 10px;
+            padding-right: 30px;
+            text-shadow: 0 0.2rem 0.2rem rgba(31, 31, 31, 0.5); }
+            #contentBox .content_area > div > h3 > span:before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: -1;
+              width: 0;
+              height: 20px;
+              background-color: #fa3;
+              border-radius: 10px;
+              transform: skewX(-20deg);
+              transition: all 300ms ease-out; }
+            #contentBox .content_area > div > h3 > span.active:before {
+              width: 100%; }
+        #contentBox .content_area > div p {
+          margin-bottom: 0.8rem;
+          word-break: keep-all; }
+          #contentBox .content_area > div p > .bold {
+            font-weight: bold; }
+      #contentBox .content_area .basic_info {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        padding: 10px 50px;
+        box-sizing: border-box;
+        border-radius: 150px;
+        overflow: hidden; }
+        #contentBox .content_area .basic_info > div {
+          float: left; }
+        #contentBox .content_area .basic_info .myPhoto {
+          position: absolute;
+          top: 0;
+          left: 0px;
+          width: 300px;
+          height: 300px;
+          margin-right: 3rem;
+          border-top-right-radius: 100%;
+          border-bottom-right-radius: 100%;
+          background-image: url("../../img/resume.jpg");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: 100% auto; }
+        #contentBox .content_area .basic_info .myInfo {
+          width: 500px;
+          height: 150px;
+          margin-top: 90px;
+          margin-left: 300px; }
+          #contentBox .content_area .basic_info .myInfo strong {
+            font-size: 2.5rem; }
+          #contentBox .content_area .basic_info .myInfo > ul {
+            width: 100%;
+            height: auto; }
+          #contentBox .content_area .basic_info .myInfo > ul li {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px; }
+            #contentBox .content_area .basic_info .myInfo > ul li a {
+              display: block;
+              width: 100%;
+              height: 100%; }
+            #contentBox .content_area .basic_info .myInfo > ul li a > i {
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 2rem;
+              text-align: center; }
+      #contentBox .content_area .experience {
+        margin-right: 0; }
+      #contentBox .content_area .skills > ul {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .skills > ul li {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        border-radius: 100%;
+        background-color: #fa3; }
+      #contentBox .content_area .skills .skill_graph {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .cerfi {
+        margin-right: 0; }
+      #contentBox .content_area .interest > ul {
+        width: 100%;
+        height: auto; }
+      #contentBox .content_area .interest > ul li {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #fa3;
+        border-radius: 100%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 100px; }
+        #contentBox .content_area .interest > ul li:nth-child(2n) {
+          transform: translateY(50px); }
+      #contentBox .content_area .personality {
+        margin-right: 0; }
+        #contentBox .content_area .personality > ul {
+          width: 100%;
+          height: auto; }
+        #contentBox .content_area .personality > ul li {
+          float: left;
+          width: 130px;
+          height: 130px;
+          border-radius: 100%;
+          border: 4px solid #fa3;
+          box-sizing: border-box;
+          margin-right: 20px;
+          text-align: center;
+          line-height: 130px; }
+      #contentBox .content_area .vision {
+        margin-right: 0; } }
+
+@media all and (max-width: 640px) {
+  #footBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    background-color: #0d0d0d; }
+    #footBox > p {
+      text-align: center;
+      color: #ccc;
+      font-size: 0.785rem;
+      line-height: 1rem; } }
+
+@media all and (min-width: 640px) and (max-width: 940px) {
+  #footBox {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #0d0d0d; }
+    #footBox > p {
+      text-align: center;
+      color: #ccc;
+      font-size: 0.875rem;
+      line-height: 30px; } }
+
+@media all and (min-width: 940px) {
+  #footBox {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #0d0d0d; }
+    #footBox > p {
+      text-align: center;
+      color: #ccc;
+      font-size: 0.875rem;
+      line-height: 30px; } }

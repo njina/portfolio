@@ -1,0 +1,72 @@
+// _setting.scss
+
+
+//변수 -----------------------------
+// device size --------
+$mobile : 640px;
+$tablet : 940px;
+$labtop : 1240px;
+
+// size --------
+$maxWidth : 1440px;
+
+
+// color -------
+$black : #0d0d0d;
+$white : #fff;
+$gray : #ccc;
+$bgColor : #fff;
+$bgColorFooter : #0d0d0d;
+$keyColor : #fa3;
+$boxShadowColor : rgba(31,31,31,0.5);
+$textShadow :rgba(31,31,31,0.5);
+
+
+
+// font --------
+$bodyText : 1.1rem;
+$h3 : 2rem;
+$h3Mobile : 1.5rem;
+$h3Tablet : 1.5rem;
+
+
+
+
+
+// mixin ---------------------------------
+//각 섹션 사이즈
+@mixin sectionSize ($w: 100%, $h:auto){
+	width: $w; height: $h;
+	margin: auto;
+	@content;
+}
+// area 사이즈
+@mixin areaSize ($w: 100%, $mw:$maxWidth, $h:auto){
+	width: $w; max-width: $mw; height: $h;
+	margin: auto;
+	@content;
+}
+
+//a 영역확보
+@mixin aLink (){
+	display: block; width:100%; height:100%;
+	@content;
+}
+
+//백그라운드 이미지 
+@mixin bgImage ($i, $r: no-repeat, $p: 50% 50%, $s: 100% auto){
+	background-image: url($i);
+	background-repeat: $r;
+	background-position: $p;
+	background-size: $s;
+	@content;
+}
+
+//box-shadow
+@mixin boxShadow {
+	box-shadow: 0 0.2rem 0.8rem $boxShadowColor;
+}
+//text-shadow
+@mixin textShadow {
+	text-shadow: 0 0.2rem 0.2rem $textShadow;
+}

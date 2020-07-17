@@ -1,5 +1,5 @@
 [
-	{"nameKr":"서울 재즈 페스티벌", "nameEn":"Seoul Jazz Festival", "siteUrl":"http://njina.github.io/portfolio/003_jazzfestival/03_coding", "imageUrl":"jazzfestival_thum.png"},
-	{"nameKr":"팔도", "nameEn":"PalDo", "siteUrl":"http://njina.github.io/portfolio/002_paldo/03_coding_02", "imageUrl":"paldo_thum.png"},
-	{"nameKr":"화성 행궁 야간개장", "nameEn":"Hwaseong Haenggung", "siteUrl":"http://njina.github.io/portfolio/005_hwasungNight/03_coding", "imageUrl":"hwaseong_thum.png"}
+	{"nameKr":"서울 재즈 페스티벌", "nameEn":"Seoul Jazz Festival", "siteUrl":"https://njina.github.io/seoul_jazz_festival", "imageUrl":"jazzfestival_thum.png"},
+	{"nameKr":"팔도", "nameEn":"PalDo", "siteUrl":"https://njina.github.io/paldo", "imageUrl":"paldo_thum.png"},
+	{"nameKr":"화성 행궁 야간개장", "nameEn":"Hwaseong Haenggung", "siteUrl":"https://njina.github.io/hwaseong_haenggung/", "imageUrl":"hwaseong_thum.png"}
 ]
